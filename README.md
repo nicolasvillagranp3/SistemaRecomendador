@@ -23,14 +23,14 @@ Para lanzar la imagen de docker habrá que seguir los siguientes pasos:
 
 1. Crear la imagen:
 El punto indica que se cogen todos los archivos del directorio en el que nos encontramos. Podemos llamar a la imagen como queramos, teniendo en cuenta que al ejecutarla tendremos que usar ese nombre.
->>> docker build . -t 'Nombre Imagen'
+> docker build . -t 'Nombre Imagen'
 
 2. Una vez que tengamos la imagen creada tendremos que elegir un nombre de un contenedor para poder ejecutarlo de nuevo invocandolo. Esto se indica a traves
 de --name. Tambien sera importante ejecutarlo con el flag -it para que el programa sea interactivo.
->>> docker run -it --name 'Nombre Contenedor' -it 'Nombre Imagen'
+> docker run -it --name 'Nombre Contenedor' -it 'Nombre Imagen'
 - Este primer comando sera unicamente necesario ejecutarlo una unica vez. Cada vez que queramos correr el contenedor con la informacion guardada tendremos que
 que ejecutar:
->>> docker start -i 'Nombre Contenedor'
+> docker start -i 'Nombre Contenedor'
 
 
 
