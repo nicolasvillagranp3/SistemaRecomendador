@@ -15,5 +15,23 @@ operaciones son de vital importancia para nutrir de datos al modelo, de ahí que
 - Cabe destacar que toda informacion que se le proporcione al programa sera correctamente guardada para poder ser usada mas adelante en otras ejecuciones, es decir,
 al crear un usuario y dotarlo de información, este podra ser consultado y usado en cualquier momento.
 Las particularidades del codigo, como por ejemplo las operaciones de limpieza, vienen precisamente explicadas en él.
+## Requirements.
+- Para poder correr el programa hay que instalar los paquetes necesarios con sus correspondientes versiones. Se ejecutara el siguiente codigo en terminal:
+>>> pip install -r requirements.txt
+## Docker.
+Para lanzar la imagen de docker habrá que seguir los siguientes pasos:
+
+1. Crear la imagen:
+El punto indica que se cogen todos los archivos del directorio en el que nos encontramos. Podemos llamar a la imagen como queramos, teniendo en cuenta que al ejecutarla tendremos que usar ese nombre.
+>>> docker build . -t 'nombre con el que quieras llamarlo'
+
+2. Una vez que tengamos la imagen creada tendremos que elegir un nombre de un contenedor para poder ejecutarlo de nuevo invocandolo. Esto se indica a traves
+de --name. Tambien sera importante ejecutarlo con el flag -it para que el programa sea interactivo.
+>>> docker run -it --name 'Nombre Contenedor' -it 'Nombre Imagen'
+- Este primer comando sera unicamente necesario ejecutarlo una unica vez. Cada vez que queramos correr el contenedor con la informacion guardada tendremos que
+que ejecutar:
+>>> docker start -i 'Nombre Contenedor'
+
+
 
 
