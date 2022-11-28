@@ -1,8 +1,8 @@
-## Sistema de Recomendación de películas usando expresiones regulares y user-based collaborative filtering en python.
-# Intro.
+# Sistema de Recomendación de películas usando expresiones regulares y user-based collaborative filtering en python.
+## Intro.
 El obejtivo de cualquier recomendador de peliculas es tratar de conocer los gustos profundos del usuario para poder recomendarle peliculas que quizá a priori 
 no vería. Con esta idea, a partir del dataset obtenido, desarrollamos una recomendación basadada en obtener los usuarios más similares a uno dado, entendiendo la similitud como una distancia entre puntos de un espacio representado por usuarios, en el que los usuarios con calificaciones parecidas estaran mas cercanos.
-# Implementación
+## Implementación
 El código viene correctamente documentado, pero una explicación breve me parecia necesaria. 
 El programa comienza por cargar y calcular los datos de los ficheros y la matriz de los usuarios de manera concurrente a las operaciones de entrada y salida iniciales mediante la implementacion de un hilo, (para que la experiencia sea mas rapida y fluida). Posteriormente se le permitira al usuario realizar distintas operaciones:
 El usuario podra iniciar sesión con un usuario ya existente o crear uno nuevo.
