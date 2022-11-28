@@ -17,7 +17,7 @@ al crear un usuario y dotarlo de información, este podra ser consultado y usado
 Las particularidades del codigo, como por ejemplo las operaciones de limpieza, vienen precisamente explicadas en él.
 ## Requirements.
 - Para poder correr el programa hay que instalar los paquetes necesarios con sus correspondientes versiones. Se ejecutara el siguiente codigo en terminal:
->>> pip install -r requirements.txt
+> pip install -r requirements.txt
 ## Docker.
 Para lanzar la imagen de docker habrá que seguir los siguientes pasos:
 
